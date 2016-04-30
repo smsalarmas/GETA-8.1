@@ -1,0 +1,38 @@
+Radionics 6500 Format
+Where:
+
+[H]: 20 hex character (space) as header
+
+‘a’: Start indicator for Contact-Id message
+
+01: Numero Receptor
+
+1: Line numero
+
+s: Espacio en Blanco
+
+18: Contact-Id Identificador
+
+0002: Numero de Abonado
+
+E401:  Evento    E= New event or opening; R=Restoration or closing; P=Previous event.
+
+01: Numero de Particion
+
+002: Numero de Zona o Usuario
+
+[T]: 14 hex character as terminator 
+
+
+
+[hex20] a011 000118E40101002 [14 hex]
+
+[hex20] a011 000218E40101002[14 hex]
+
+HEARTBEAT
+
+[hex20]1RRL           @    [14 hex]
+
+
+eregular a... ....18.........
+Patron '(?P<Identificador>[a])(?P<Receptor>\d\d)(?P<Linea>\d)(?P<Espacio> )(?P<Abonado>....)(?P<ID>18)(?P<Evento>\D\d\d\d)(?P<Particion>\d\d)(?P<ZonaUsuario>\d{2,})'

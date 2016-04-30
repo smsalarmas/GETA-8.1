@@ -1,0 +1,205 @@
+# CONTACT ID DEL SYSTEM 3 Y DEL MLR2
+# Expresion Regular (5|Q)(....|...|.....) (18|58)(.................|............)(\d\d|\d)
+# Patron '(?P<Identificador>[5])(?P<Receptor>\d\d)(?P<Linea>[0-9]{1,3})(?P<Espacio> )(?P<ID>18)(?P<Abonado>....)(?P<Evento>\D\d\d\d)(?P<Particion>\d\d)(?P<ZonaUsuario>\d{2,})'
+
+5011 186026E60200001    MLR2      5\d\d\d \d\d\d\d\d\d\D\d\d\d\d\d\d\d\d para MLR2
+501002 180002E40101002 SYSTEM3     .(\d\d\d|\d\d\d\d\d) \d\d\d\d\d\d.\d\d\d\d\d\d\d\d  PARA LOS 3 CONTACT ID
+50001 180002E401010001 OTRO CID SYSTEM 3
+Q01001 580000000001E40101001 nuevo contact id papa con Q y 58
+# CONTACT ID QUE EMPIEZA POR A
+# Expresion Regular .\d\d\d \d\d\d\d\d\d.\d\d\d\d\d\d\d\d
+#Patron (?P<Identificador>[a])(?P<Receptor>\d\d)(?P<Linea>[0-9]{1,3})(?P<Espacio> )(?P<Abonado>....)(?P<ID>18)(?P<Evento>\d\d\d\d)(?P<Particion>\d\d)(?P<ZonaUsuario>\d{2,})
+
+a011 001118340101005           
+
+# CONTACT ID AES INTELLINET
+# Expresion Regular 1\d \d\d\d\d 18 \D... .. ....
+# Patron '(?P<Identificador>1)(?P<Linea>[0-9])(?P<Espacio> )(?P<Abonado>....)(?P<Espacio2> )(?P<ID>18)(?P<Espacio3> )(?P<Evento>\D\d\d\d)(?P<Espacio4> )(?P<Particion>\d\d)(?P<Espacio5> )(?P<Nada>.)(?P<ZonaUsuario>\d{2,})'
+
+11 9957 18 E602 00 C000 aes    1\d \d\d\d\d 18 \D... .. ....  para los AES  ##ojo unido event alarm receptor
+13 9981 18 E1C1 01 C002 aes
+13 8981 18 E401 02 U002 aes
+13 1150 18 E401 02 U004
+13 0401 18 E402 02 U040 
+
+# SIA 1
+# Expresion Regular S0\d\d\[#(...|....|.....|......)\|N..\d\d\d]
+# Patron (?P<Identificador>S)(?P<Receptor>[0-9]{1,2})(?P<Linea>\d)(?P<Nada>\[\#)(?P<Abonado>[a-z0-9]{1,6})(?P<Nada2>\|N)(?P<Evento>\D\D)(?P<ZonaUsuario>[0-9]{1,6})
+
+S012[#252|NOP003] S0\d\d\[#...\|N..\d\d\d]                  
+S012[#0048|NCL002]    S0\d\d\[#....\|N\w\w\d\d\d]
+S003[#00200|NOP002] S0\d\d\[#.....\|N..\d\d\d]
+S003[#000394|NCL003] S0\d\d\[#......\|N..\d\d\d]
+
+
+
+
+
+#SIA3
+#Eregular S(\d\d\d\d\d\d|\d\d\d\d\d|\d\d\d)\[#(....|.....|......)\|Nri./(..\d\d\d|..\d\d)(]|/|)(ri.|..\d\d\d|..\d\d||)(]|/|)(ri.|..\d\d\d|..\d\d||)(]|/|)(ri.|..\d\d\d|..\d\d||)(]|/|)(ri.|..\d\d\d|..\d\d||)(]|/|)(ri.|..\d\d\d|..\d\d||)(]|/|)(ri.|..\d\d\d|..\d\d||)(]|/|)(ri.|..\d\d\d|..\d\d||)(]|/|)(ri.|..\d\d\d|..\d\d||)(]|/|)
+#Patron '(?P<Identificador>[S])(?P<Receptor>\d\d)(?P<Linea>[0-9]{1,3})(?P<Separador>\[\#)(?P<Abonado>[0-9a-z]{1,6})(?P<Separador2>\|)(?P<Separador3>Nr.)(?P<Particion>[0-9a-z]{1,3})(?P<Separador4>/)(?P<Evento>\D\D)(?P<ZonaUsuario>[0-9a-z]{1,5})'
+
+
+#para los 8
+S0\d\d\[#(....|.....|......)\|N\w\w\d/....(]|/....)(/|]|)(\w\w\w\w|)(]|/|)(\w\w\w\w|)(]|/|)(\w\w\w\w|)(]|/|)(\w\w\w\w|)(]|/|)(\w\w\w\w|)(]|/|)(\w\w\w\w|)(]|/|)(\w\w\w\w|)(]|/|)(\w\w\w\w|)(]|/|)
+
+#para los 6  S0\d\d\[#....\|N\w\w\d/....(]|/....)(/|]|)(\w\w\w\w|)(]|/|)(\w\w\w\w|)(]|/|)(\w\w\w\w|)(]|/|)(\w\w\w\w|)(]|/|)(\w\w\w\w|)(]|/|)(\w\w\w\w|)(]|/|)
+
+S011[#0151|Nri1/CL03] S0\d\d\[#....\|N\w\w\d/....]     
+S012[#0011|Nri1/OP03/OR00]    S0\d\d\[#....\|N\w\w\d/..../....]
+S011[#0518|Nri1/CG00/UB11/CL01] S0\d\d\[#....\|N\w\w\d/..../..../....]
+S003[#0205|Nri1/BA02/OP02/OR00/BH02] S0\d\d\[#....\|N\w\w\d/..../..../..../....]
+S012[#0083|Nri1/OP01/YK00/CL01/YK00/OP01]  S0\d\d\[#....\|N\w\w\d/..../..../..../..../....]
+S003[#0102|Nri1/CL01/YK00/OP01/CL01/YK00/OP02/YK00/CL01]  S0\d\d\[#....\|N\w\w\d/..../..../..../..../..../..../..../....]
+
+S011[#000119|Nri1/CL01]  S0\d\d\[#......\|N.../....]
+S003[#000036|Nri1/BA01/BA02/BV00/BH02/BH01/OP01] S0\d\d\[#......\|N.../..../..../..../..../..../....]
+
+SIA SISTEM III
+
+S01001[#000069|Nri1/BA11/BH11]   
+S01001[#000069|Nri1/OP40]
+S01002[#0002|Nri1/CW000/CL001/BA028/CR000/ri0/OG001/ri1/OP001]
+
+Eregular de seleccionar antes de hacer varias tramas
+S(\d\d\d\d\d\d|\d\d\d\d\d|\d\d\d)\[#(....|.....|......)\|Nri.
+
+ 
+
+#SIA2
+#Eregular S(\d\d\d\d\d|\d\d\d)\[#\d\d\d\d\|Nri\d\w\w(\d\d\d|\d\d)] 
+#Patron '(?P<Identificador>[S])(?P<Receptor>\d\d)(?P<Linea>[0-9]{1,3})(?P<Separador>\[\#)(?P<Abonado>[0-9a-z]{1,6})(?P<Separador2>\|)(?P<Separador3>Nr.)(?P<Particion>[0-9a-z]{1,3})(?P<Evento>\D\D)(?P<ZonaUsuario>[0-9a-z]{1,5})'
+
+
+#para los 2
+
+S003[#0713|Nri1CD00] S(\d\d\d\d\d|\d\d\d)\[#\d\d\d\d\|Nri\d\w\w(\d\d\d|\d\d)]   
+S011[#0002|Nri1OP001] 
+S01000[#0274|Nri1HA13]
+
+
+#CONTACT ID DE DMP
+#EREGULAR 1(\d\d|\d|-) (.....|....|...|..) c(.....|....|...|..) 18 . ... .. ... .
+#PATRON '(?P<Identificador>1)(?P<NumTarjeta>\d|\-)(?P<Linea>\d|)(?P<Espacio> )(?P<Abonado>[0-9a-z]{1,5})(?P<Espacio2> )(?P<Nada>c)(?P<Espacio3> )(?P<AbonadoCID>[0-9a-z]{1,5})(?P<Espacio4> )(?P<Identificadorcid>18)(?P<Espacio5> )(?P<Calificador>.)(?P<Espacio6> )(?P<Evento>...)(?P<Espacio7> )(?P<Particion>..)(?P<Espacio8> )(?P<ZonaUsuario>...)(?P<Espacio9> )(?P<CheckSum>.)'
+
+12 2063 c 2063 18 1 458 00 000 7
+121 2063 c 2063 18 1 570 01 004 2
+1- 2063 c 2063 18 1 402 01 001 B CONTACT ID DMP
+121 206 c 206 18 1 570 01 004 2
+
+
+
+#SERIAL 3 DMP
+#EREGULAR 1(\d\d|\d|-) (.....|....|...|..) Z.+
+#PATRON (?P<Identificador>1)(?P<NumTarjeta>\d|\-)(?P<Linea>\d|)(?P<Espacio> )(?P<Abonado>[0-9a-z]{1,5})(?P<Espacio2> )(?P<GrupoEvento>Z.)(?P<LargoTrama>/.../)(?P<TipoSubMensaje>..)(?P<Evento>.\w\w|\d\d\d|\d\d)(?P<Seprador>/)(?P<Zona>z.[0-9]{1,5}|)(?P<NombreZona>"[0-9A-Z- ]{1,32}|)(?P<Seprador2>/|)(?P<Usuario>u.[0-9]{1,5}|)(?P<NombreUsuario>"[0-9A-Z- ]{1,32}|)(?P<Seprador3>/|)(?P<Area>u.[0-9]{1,5}|)(?P<NombreArea>"[0-9A-Z- ]{1,32}|)
+
+Za\062\t "BU\z 0232"FRONT DOOR\a 03"OFFICE\u 0568"JOHN SMITH\
+Za\062\tq"BU\z 0232"FRONT DOOR\a 03"OFFICE\u 0568"JOHN SMITH\
+Za\062\tq000\z 0232"FRONT DOOR\a 03"OFFICE\u 0568"JOHN SMITH\
+
+DESC-EVENT\LARGO\TIPOSUBMENSAJE\z 0232"FRONT DOOR\a 03"OFFICE\u 0568"JOHN SMITH\
+
+#cuatro mas dos
+#patron '(?P<Identificador>[1])(?P<Receptor>\d\d)(?P<Linea>[0-9]{1,3})(?P<Separador>      )(?P<Abonado>....)(?P<Separador2> )(?P<NADA>.)(?P<Separador3>  )(?P<Evento>..)'
+#eregular 1\d\d\d(|\d\d)      .... .  ..
+
+#SiaViejo1   3...   .......\D\D....
+'(?P<Identificador>[3])(?P<Receptor>\d\d)(?P<Linea>[0-9]{1,3})(?P<Separador> {4,9})(?P<Abonado>[0-9]{1,6})(?P<Evento>\D\D)(?P<Particion>\d|)(?P<Espacio>   |  | |)(?P<ZonaUsuario>\S\S\S|\S\S|\S)'
+
+3004      1019QT 002            
+3004      0002QT1 02
+3011      0263CL  02
+3012    000326OP  02
+3012    000326ri   1 
+3011      0263ri   1
+3011       241CL 002
+
+#sia
+
+3011      0401r1OP02
+
+
+
+#PIMA NEW PAF
+#EREGULAR \d\d\d\d\d----..
+#PATRON  '(?P<Linea>\d)(?P<Abonado>....)(?P<Separadores>----)(?P<Evento>..)'
+
+ 
+ 10064----AI
+
+ 10064----DS
+
+ 10064----EA
+
+ 10064----QU
+
+
+
+
+
+
+
+005000[#0000|NVZ0100]  RECEPTOR SISTEM3    \d\d\d\d\d\d\[#\d\d\d\d\|\D\D\D\d\d\d\d\]
+
+                                        1...      .... .  ..
+1011      0000 T  40   RECEPTOR MLR2    1...      0000 .  ..
+1003      0000 T  10   RECEPTOR MLR2
+1003      0000 T  40
+1014      0000 T  10
+
+
+1003      0332 T  FF  
+1003      0319 T  FF  
+ 
+1014      4580 A 000
+
+
+#MCDI
+
+#4+2 MCDI
+#Eregular \d\d:\d\d  \d\d/\d\d\[/\d\d\]  .. .... ..
+#Patron '(?P<Fecha>\d\d:\d\d  \d\d/\d\d\[/\d\d\]  )(?P<Receptor>.)(?P<Linea>.)(?P<Separador> )(?P<Abonado>....)(?P<Nada> )(?P<Evento>..)'
+
+24:00  02/01[/15]  11 0002 02
+
+#FORMATO CONTACT ID MCDI
+#Eregular \d\d:\d\d  \d\d/\d\d\[/\d\d\]  .. .... 18 \D... .. ...
+#Patron '(?P<Fecha>\d\d:\d\d  \d\d/\d\d\[/\d\d\]  )(?P<Receptor>.)(?P<Linea>.)(?P<Espacio> )(?P<Abonado>....)(?P<Espacio2> )(?P<ID>18)(?P<Espacio3> )(?P<Evento>\D...)(?P<Espacio4> )(?P<Particion>..)(?P<Espacio5> )(?P<Nada>.)(?P<ZonaUsuario>\d{2,})'
+
+24:00  02/01[/15]  11 0002 18 E401 01 002
+
+#FORMATO MODEM SIA
+#Eregular \d\d:\d\d  \d\d/\d\d\[/\d\d\]  .. \[#......\|....../...../.....]
+#Patron '(?P<Fecha>\d\d:\d\d  \d\d/\d\d\[/\d\d\]  )(?P<Receptor>.)(?P<Linea>.)(?P<Espacio> )(?P<Nada>\[\#)(?P<Abonado>[a-z0-9A-Z]{1,6})(?P<Separador>\|)(?P<CodigoFuncion>.)(?P<Evento>..)(?P<ZonaUsuario>...)'
+
+24:00  02/01[/15]  11 [#000000|EYK001] Modo nativo
+24:00  02/01[/15]  11 [#000000|EYK001/YK001]
+24:00  02/01[/15]  11 [#000000|EYK001/YK001/YK001]
+24:00  02/01[/15]  11 [#000000|EYK001/YK001/YK001/YK001]
+24:00  02/01[/15]  11 [#000000|EYK001/YK001/YK001/YK001/YK001]
+24:00  02/01[/15]  11 [#000000|EYK001/YK001/YK001/YK001/YK001/YK001]
+24:00  02/01[/15]  11 [#000000|EYK001/YK001/YK001/YK001/YK001/YK001/YK001]
+24:00  02/01[/15]  11 [#000000|EYK001/YK001/YK001/YK001/YK001/YK001/YK001/YK001]
+
+#FORMATO MODEM SIA EMULANDO ADEMCO
+#Eregular .. \[#......\|....../...../.....]
+#Patron (?P<Receptor>.)(?P<Linea>.)(?P<Espacio> )(?P<Nada>\[\#)(?P<Abonado>[a-z0-9A-Z]{1,6})(?P<Separador>\|)(?P<CodigoFuncion>.)(?P<Evento>..)(?P<ZonaUsuario>...)
+
+11 [#......|.YK001/YK001/YK001] Emulación Ademco685
+11 [#......|.YK001/YK001/YK001/YK001]
+11 [#......|.YK001/YK001/YK001/YK001/YK001]
+11 [#......|.YK001/YK001/YK001/YK001/YK001/YK001]
+11 [#......|.YK001/YK001/YK001/YK001/YK001/YK001/YK001]
+11 [#......|.YK001/YK001/YK001/YK001/YK001/YK001/YK001/YK001]
+11 [#......|.YK001/YK001/YK001/YK001/YK001/YK001/YK001/YK001/YK001]
+11 [#......|.YK001/YK001/YK001/YK001/YK001/YK001/YK001/YK001/YK001/YK001]
+11 [#......|.YK001/YK001/YK001/YK001/YK001/YK001/YK001/YK001/YK001/YK001/YK001]
+
+#HEARBEAT
+@<CR>
+
+##formato privado Sistem 3 
+#Patron ......\[#0000\|N......\]
+#Eregular '(?P<Identificador>.)(?P<Receptor>..)(?P<Linea>...)(?P<Separador>\[\#)(?P<Abonado>....)(?P<Separador2>\|)(?P<Evento>.......)'
+
+002002[#0000|NYYZZZZ]

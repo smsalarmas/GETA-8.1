@@ -1,0 +1,55 @@
+
+Ademco 685 Format
+
+[H]RLsAAAAs18sQXYZsGGsUCCC[(CR)]
+
+Ejemplo:
+
+[H]11 0002 18 E401 01 U001[(CR)]
+   
+Where:
+
+[H]: 0A hex character (LF) as header
+
+1: Numero de Receptor
+
+1: Numero de Linea 
+
+s: Espacio
+
+0002: Abonado
+
+18: Identificador Contact ID
+
+E401: Evento  E= New event or opening; R=Restoration or closing; P=Previous 
+
+01: Numero de la Particion
+
+U: No la tomes en cuenta igual que en AES Intellinet  lo que significa que si es "C" Esto es para zona y si es "U" es para usuario
+
+001: Zone number or user identifier.
+
+CR: Terminal de la Trama 0D hex character (CR) as terminator 
+
+
+
+ Heartbeat
+
+ [H]RLsOKAYs@s[CR]
+
+Where:
+
+[H]: 0A hex character (LF) as header
+
+RR: Receiver number
+
+L: Line number
+
+s: Space
+
+@: Supervision character
+
+CR: Terminal de la Trama 0D hex character (CR) as terminator
+
+EREGULAR 1\d \d\d\d\d 18 .... .. ....
+PATRON (?P<Identificador>1)(?P<Linea>[0-9])(?P<Espacio> )(?P<Abonado>....)(?P<Espacio2> )(?P<ID>18)(?P<Espacio3> )(?P<Evento>\D...)(?P<Espacio4> )(?P<Particion>\d\d)(?P<Espacio5> )(?P<Nada>.)(?P<ZonaUsuario>\d{2,})

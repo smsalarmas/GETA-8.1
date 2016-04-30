@@ -1,0 +1,46 @@
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 13:59:16
+('0020', '18', '3401', '01', '004') - 26 Mar 16 13:59:16
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 13:59:16
+('0020', '18', '3401', '01', '004') - 26 Mar 16 13:59:16
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 13:59:17
+('0020', '18', '3401', '01', '004') - 26 Mar 16 13:59:17
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 13:59:17
+('0020', '18', '3401', '01', '004') - 26 Mar 16 13:59:17
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:01:57
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:01:57
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:03:46
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:03:46
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:03:48
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:03:48
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:03:49
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:03:49
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:03:51
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:03:51
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:03:54
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:03:54
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:03:57
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:03:57
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:05:29
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:05:29
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:09:01
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:09:01
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:09:02
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:09:02
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:09:02
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:09:02
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:09:09
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:09:09
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:09:09
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:09:09
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:09:09
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:09:09
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:09:10
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:09:10
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:09:10
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:09:10
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:09:10
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:09:10
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:09:10
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:09:10
+<packet sq="12184" id="1" count="1" rep="1" group="ALL"><msg dt="lx" sn="LX-0020" dts="2016-03-26 12:12:00" csts="2016-03-26 17:13:27" src="LX20" evt="DATA DTMF" evtData="0x00003030323031383334303130313030342A"/></packet> - OK - 26 Mar 16 14:09:10
+('0020', '18', '3401', '01', '004') - 26 Mar 16 14:09:10

@@ -1,0 +1,18 @@
+Receptor VisorALARM PLUS 2U
+EMULANDO SURGARD
+
+CONTACT ID
+
+501001 180002E40101002
+5RRL 180002E40101001
+
+EMULANDO SURGARD
+
+HEARTBEAT
+
+101001           @    [T]
+1011           @    [T]
+
+
+Eregular 5(....|...|.....) 18............(\d\d|\d)
+Patron '(?P<Identificador>[5])(?P<Receptor>\d\d)(?P<Linea>[0-9a-zA-Z]{1,3})(?P<Espacio> )(?P<ID>18)(?P<Abonado>....)(?P<Evento>\D\d\d\d)(?P<Particion>\d\d)(?P<ZonaUsuario>\d{2,})'
